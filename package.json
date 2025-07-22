@@ -1,0 +1,60 @@
+{
+  "name": "n8n-nodes-cloudflare-dns",
+  "version": "0.1.0",
+  "description": "n8n community node to interact with Cloudflare DNS API",
+  "keywords": [
+    "n8n-community-node-package",
+    "cloudflare",
+    "dns",
+    "n8n",
+    "workflow"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": "Manindar Mohan",
+    "email": "mm@pug.gs"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "packageManager": "npm@9.6.7",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials --ext .ts,.js",
+    "lintfix": "eslint nodes credentials --ext .ts,.js --fix",
+    "prepublishOnly": "npm run build && npm run lint -s"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/CloudflareDnsApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/CloudflareDns/CloudflareDns.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^8.50.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "*",
+    "prettier": "^2.7.1",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
