@@ -10,14 +10,14 @@
     "workflow"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/manindar-mohan/n8n-nodes-cloudflare-dns#readme",
   "author": {
     "name": "Manindar Mohan",
     "email": "mm@pug.gs"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/manindar-mohan/n8n-nodes-cloudflare-dns.git"
   },
   "engines": {
     "node": ">=18.17.0"
